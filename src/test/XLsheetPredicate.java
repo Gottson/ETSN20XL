@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import model.XLsheet;
 import util.XLException;
 
-class XLsheetStatement {
+class XLsheetPredicate {
 	XLsheet sheet = new XLsheet();
 	XLException e;
 
@@ -35,16 +35,15 @@ class XLsheetStatement {
 		sheet.add("A3", "A1");
 
 		try {
-			sheet.add("A1", "");
+			sheet.add("A1", " ");
 		} catch (XLException ex) {
 			e = ex;
 			assertEquals("1.00",sheet.getInput("A1"));
-
 		}
-		//assertTrue(e instanceof XLException);
+		//(e instanceof XLException);
 	}
 
-	// Add new input on new adress
+	// Add new input on new address
 	@Test()
 	void test4() {
 		sheet.add("A4", "1");
