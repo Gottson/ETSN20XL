@@ -82,7 +82,7 @@ public class ExprParser {
     private Expr expr() throws IOException {
         Expr result, term;
         result = term();
-        while (token == '+' || token == '-') {
+        while (token == '+' || token == '-'){
             int op = token;
             token = tokenizer.nextToken();
             term = term();
