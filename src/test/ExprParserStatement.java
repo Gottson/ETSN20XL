@@ -66,7 +66,6 @@ class ExprParserStatement {
 		try {
 			e = parser.build("XXX*123");
 		} catch (Exception e1) {
-			e1.printStackTrace();
 			assertThat(e1.getMessage(), is("illegal address: XXX"));
 		}
 	}
@@ -90,7 +89,6 @@ class ExprParserStatement {
 		try {
 			e = parser.build("");
 		} catch (Exception e1) {
-			e1.printStackTrace();
 			assertThat(e1.getMessage(), is("unexpected end of text"));
 		}
 	}
@@ -100,10 +98,9 @@ class ExprParserStatement {
 		parser = new ExprParser();
 		e = null;
 		try {
-			e = parser.build("");
+			e = parser.build("*");
 		} catch (Exception e1) {
-			e1.printStackTrace();
-			assertThat(e1.getMessage(), is("unexpected -1 token"));
+			assertThat(e1.getMessage(), is("unexpected *"));
 		}
 	}
 
