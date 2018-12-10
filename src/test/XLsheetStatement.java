@@ -27,18 +27,37 @@ class XLsheetStatement {
 		assertEquals("", sheet.getInput("A1"));
 	}
 
-	//
+	// Add element with empty input in an address
+	// that is referred to from other address.
 	@Test()
 	void test3() throws XLException {
+		sheet.add("A1", "1");
 		sheet.add("A3", "A1");
 
-		// e = assertThrows(
-		// XLException.class, sheet.add("A1", ""));
 		try {
-			sheet.add("A1", "");
+			sheet.add("A1", " ");
 		} catch (XLException ex) {
 			e = ex;
-			
+
+		}
+		assertTrue(e instanceof XLException);
+	}
+
+	// Add new input on new adress
+	@Test()
+	void test4() {
+		sheet.add("A4", "1");
+		assertEquals("1.00", sheet.getInput("A4"));
+	}
+
+	// Add bad input
+	@Test()
+	void test5() throws XLException {
+		
+		try {
+			sheet.add("A1", "1/0");
+		} catch (XLException ex) {
+			e = ex;
 		}
 		assertTrue(e instanceof XLException);
 	}

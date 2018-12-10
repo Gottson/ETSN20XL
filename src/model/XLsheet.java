@@ -44,8 +44,9 @@ public class XLsheet extends Observable implements Environment {
 				Expr expr = exprSlot.getExpr();
 				return expr.value(this);
 			}
+			throw (new XLException("Adress does not contain exprslot"));
 		}
-		throw (new XLException("Can only calculate Expressions"));
+		throw (new XLException("Sheet does not contain adress"));
 	}
 
 	public void add(String address, String input) throws XLException {
