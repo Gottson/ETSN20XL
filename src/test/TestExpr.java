@@ -6,11 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
+//import static org.junit.Assert.assertEquals;
+//import org.junit.Test;
 
 import expr.Expr;
 import expr.ExprParser;
 
-class TestExpr {
+public class TestExpr {
 
 	ExprParser parser;
 	Expr e;
@@ -21,7 +23,7 @@ class TestExpr {
 		e = null;
 	}
 	@Test
-	void test1() {
+	public void test1() {
 		parser= new ExprParser();
 		e=null;
 		try {
@@ -32,7 +34,7 @@ class TestExpr {
 			}
 	}
 	@Test
-	void test2() {
+	public void test2() {
 		parser= new ExprParser();
 		e=null;
 		try {
@@ -43,7 +45,7 @@ class TestExpr {
 			}
 	}
 	@Test
-	void test3() {
+	public void test3() {
 		parser= new ExprParser();
 		e=null;
 		try {

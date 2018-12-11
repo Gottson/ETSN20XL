@@ -1,6 +1,8 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.Assert.assertEquals;
+//import org.junit.Test;
 
 import java.io.IOException;
 
@@ -14,7 +16,7 @@ import util.XLException;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-class ExprParserStatement {
+public class ExprParserStatement {
 	ExprParser parser;
 	Expr e;
 	
@@ -25,7 +27,7 @@ class ExprParserStatement {
 	}
 
 	@Test
-	void testFactor1() {
+	public void testFactor1() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -37,7 +39,7 @@ class ExprParserStatement {
 	}
 	
 	@Test
-	void testFactor2() {
+	public void testFactor2() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -48,7 +50,7 @@ class ExprParserStatement {
 	}
 	
 	@Test
-	void testFactor3() {
+	public void testFactor3() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -60,7 +62,7 @@ class ExprParserStatement {
 	}
 	
 	@Test
-	void testFactor4() {
+	public void testFactor4() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -71,7 +73,7 @@ class ExprParserStatement {
 	}
 	
 	@Test
-	void testFactor5() {
+	public void testFactor5() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -83,7 +85,7 @@ class ExprParserStatement {
 	}
 	
 	@Test
-	void testFactor6() {
+	public void testFactor6() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -94,7 +96,7 @@ class ExprParserStatement {
 	}
 	//Not entirely sure what the input should be here
 	@Test
-	void testFactor7() {
+	public void testFactor7() {
 		parser = new ExprParser();
 		e = null;
 		try {

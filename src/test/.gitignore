@@ -7,3 +7,5 @@
 /TestExpr.class
 /XLsheetPredicate.class
 
+/ExprParserTermStatement.class
+/ExprParserTermPredicate.class
