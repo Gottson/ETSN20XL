@@ -68,7 +68,7 @@ class XLsheetStatement {
 		sheet.add("A7", "#comment");
 		assertEquals("comment",sheet.getText("A7"));
 	}
-	// Dumt test 
+	// Add to fake adress
 	@Test()
 	void test7() {
 		sheet.add("fakeadress", "#comment");

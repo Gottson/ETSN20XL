@@ -1,11 +1,7 @@
 package test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-//import static org.junit.Assert.assertEquals;
-//import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -71,7 +67,7 @@ class XLsheetPredicate {
 		sheet.add("A7", "#comment");
 		assertEquals("comment",sheet.getText("A7"));
 	}
-	// Dumt test 
+	// Add to fake adress
 	@Test()
 	void test7() {
 		sheet.add("fakeadress", "#comment");
