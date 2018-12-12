@@ -3,8 +3,9 @@ package test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 //import static org.junit.Assert.assertEquals;
 //import org.junit.Test;
 
@@ -12,13 +13,13 @@ import org.junit.jupiter.api.Test;
 import expr.Expr;
 import expr.ExprParser;
 
-class ExprParserPredicate {
+public class ExprParserFactorPredicate {
 	ExprParser parser;
 	Expr e;
 	
 	//Decision 2,  True
 	@Test
-	void testFactor1() {
+	public void testFactor1() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -31,7 +32,7 @@ class ExprParserPredicate {
 	
 	//Decision 2,  False. Decision 4, False
 	@Test
-	void testFactor2() {
+	public	void testFactor2() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -44,7 +45,7 @@ class ExprParserPredicate {
 	
 	//Decision 4,  True
 	@Test
-	void testFactor3() {
+	public	void testFactor3() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -55,7 +56,7 @@ class ExprParserPredicate {
 	
 	//Decision 7,  True
 	@Test
-	void testFactor4() {
+	public void testFactor4() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -68,7 +69,7 @@ class ExprParserPredicate {
 	
 	//Decision 7, False. D9, True. D11, True.
 	@Test
-	void testFactor5() {
+	public void testFactor5() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -80,7 +81,7 @@ class ExprParserPredicate {
 	
 	//D9, False. D14, False. D16, True
 	@Test
-	void testFactor6() {
+	public	void testFactor6() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -92,7 +93,7 @@ class ExprParserPredicate {
 	
 	//D11, False
 	@Test
-	void testFactor7() {
+	public	void testFactor7() {
 		parser = new ExprParser();
 		e = null;
 		try {
@@ -105,7 +106,7 @@ class ExprParserPredicate {
 	
 	//D14, True
 	@Test
-	void testFactor8() {
+	public	void testFactor8() {
 		parser = new ExprParser();
 		e = null;
 		try {

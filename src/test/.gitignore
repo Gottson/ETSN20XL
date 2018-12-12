@@ -9,3 +9,19 @@
 
 /ExprParserTermStatement.class
 /ExprParserTermPredicate.class
+/ExprParserFactorPredicate.class
+/ExprParserFactorStatement.class
+/AllTests.class
+/AllPredicate.class
+/AllStatement.class
+/NumberAdjustmentRightStatement.class
+/NumberAdjustmentRightPredicate.class
+/NumberAdjustmenFactorPredicate.class
+/NumberAdjustmentFactorStatement.class
+/NumberAdjustmentFillZeroStatement.class
+/NumberAdjustmentFillZeroStatementTest.class
+/NumberAdjustmentFillZeroPredicate.class
+/NumberAdjustmentFillZeroPredicateTest.class
+/NumberAdjustmentFactorPredicate.class
+/XLsheetAddPredicate.class
+/XLsheetAddStatement.class

@@ -111,6 +111,10 @@ public class NumberAdjustment extends Adjustment {
 	public String right(float number) {
 		return right((double) number);
 	}
+	
+	public StringBuilder publicFillZero(int exp) {
+		return fillZero(exp);
+	}
 
 	public static void main(String[] args) {
 		Adjustment adjustment = new NumberAdjustment(10, 2, 2);

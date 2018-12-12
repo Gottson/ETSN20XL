@@ -47,7 +47,7 @@ public class ExprParserTermStatement {
 		} catch (Exception e1) {
 			//assertThat(e1.getMessage(), is("expecting \")\", found: -1"));
 		}
-		assertEquals("1.00",e.toString());
+		assertEquals("1.00+1.00",e.toString());
 	}
 	
 	@Test

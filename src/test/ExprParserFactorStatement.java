@@ -7,7 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.io.IOException;
 
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import expr.Expr;
 import expr.ExprParser;
@@ -16,7 +17,7 @@ import util.XLException;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ExprParserStatement {
+public class ExprParserFactorStatement {
 	ExprParser parser;
 	Expr e;
 	

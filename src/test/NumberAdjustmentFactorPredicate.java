@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import util.NumberAdjustment;
 
-public class NumberAdjustmentPredicate {
+public class NumberAdjustmentFactorPredicate {
 
 	// Case 1
 	@Test
